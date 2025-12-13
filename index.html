@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/x-icon" href="/favicon.png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-content">
+                <div class="logo">synek<span class="highlight">.ovh</span></div>
+
+                <div class="nav-actions">
+                    <button
+                        id="translate-btn"
+                        class="icon-btn"
+                        aria-label="Zmień język"
+                    >
+                        <i data-lucide="languages"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <section class="hero fade-in">
+                <div class="badge">
+                    <span class="dot-container">
+                        <span class="dot-ping"></span>
+                        <span class="dot"></span>
+                    </span>
+                    <span data-lang="available">Dostępny do współpracy</span>
+                </div>
+
+                <h1>
+                    <span data-lang="hi">Cześć, jestem</span>
+                    <span class="gradient-text">Adam</span>.
+                </h1>
+
+                <p class="subtitle" data-lang="subtitle">
+                    Mam 16 lat i pasjonuję się programowaniem. Tworzę nowoczesne
+                    strony i ciągle uczę się nowych technologii.
+                </p>
+
+                <div class="buttons">
+                    <a
+                        href="https://github.com/adasieqk"
+                        target="_blank"
+                        class="btn btn-primary"
+                    >
+                        <i data-lucide="github"></i>
+                        <span data-lang="githubBtn">Mój GitHub</span>
+                    </a>
+                    <a
+                        href="kontakt.html"
+                        class="btn btn-secondary"
+                        data-lang="contactBtn"
+                        >Skontaktuj się</a
+                    >
+                </div>
+            </section>
+
+            <section class="collaborators scroll-anim">
+                <h2
+                    class="section-title"
+                    style="justify-content: center; margin-bottom: 2rem"
+                >
+                    <span data-lang="collabTitle">Z kim współpracuję?</span>
+                </h2>
+
+                <div class="collab-container">
+                    <div class="collab-card">
+                        <div class="collab-content">
+                            <h3 class="collab-name">Szymon</h3>
+                            <p class="collab-role" data-lang="collabRole">
+                                Web Developer & Współpracownik
+                            </p>
+                            <p class="collab-desc" data-lang="collabDesc">
+                                Wymieniamy się pomysłami, sprawdzamy sobie
+                                nawzajem kod i pracujemy razem nad projektami
+                                szkolnymi i pobocznymi.
+                            </p>
+
+                            <div class="collab-footer">
+                                <div class="collab-icon-box">
+                                    <i data-lucide="github"></i>
+                                </div>
+                                <a
+                                    href="https://github.com/stivik-ai"
+                                    target="_blank"
+                                    class="btn btn-primary btn-sm"
+                                >
+                                    <span data-lang="collabBtn"
+                                        >Zobacz jego GitHub</span
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills scroll-anim">
+                <h2 class="section-title">
+                    <i data-lucide="terminal" class="icon-title"></i>
+                    <span data-lang="techTitle"
+                        >Technologie, z którymi pracuję</span
+                    >
+                </h2>
+                <div class="skills-grid">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">SEO</span>
+                </div>
+            </section>
+
+            <section class="projects scroll-anim">
+                <h2 class="section-title">
+                    <i data-lucide="code-2" class="icon-title"></i>
+                    <span data-lang="projectsTitle">Wybrane Projekty</span>
+                </h2>
+
+                <div class="projects-grid">
+                    <a
+                        href="https://github.com/adasieqk/wyszukiwarka-firm"
+                        target="_blank"
+                        class="project-card"
+                    >
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i data-lucide="scan-search"></i>
+                            </div>
+                            <i
+                                data-lucide="external-link"
+                                class="external-icon"
+                            ></i>
+                        </div>
+                        <h3 data-lang="proj1Title">Wyszukiwarka firm</h3>
+                        <p data-lang="proj1Desc">
+                            Strona do wyszukiwania wprowadzonych przez
+                            użytkownika zawodów na stronie panoramafirm.pl
+                        </p>
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                            <span>Node.JS</span>
+                        </div>
+                    </a>
+
+                    <a
+                        href="https://github.com/adasieqk/portfolio"
+                        target="_blank"
+                        class="project-card"
+                    >
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i data-lucide="layout"></i>
+                            </div>
+                            <i
+                                data-lucide="external-link"
+                                class="external-icon"
+                            ></i>
+                        </div>
+                        <h3 data-lang="proj2Title">Portfolio</h3>
+                        <p data-lang="proj2Desc">
+                            Obecna strona, na którą patrzysz. Przejrzysta
+                            strona, ciemny motyw i animacje.
+                        </p>
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                    </a>
+
+                    <a
+                        href="https://github.com/adasieqk/programming-tutorials"
+                        target="_blank"
+                        class="project-card"
+                    >
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i data-lucide="folder-code"></i>
+                            </div>
+                            <i
+                                data-lucide="external-link"
+                                class="external-icon"
+                            ></i>
+                        </div>
+                        <h3 data-lang="proj3Title">Kursy</h3>
+                        <p data-lang="proj3Desc">
+                            Mój kod z nauki różnych języków programowania.
+                        </p>
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                            <span>PHP</span>
+                            <span>C#</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Adam @ synek.ovh</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

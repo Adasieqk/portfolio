@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+    <body>
+        <nav class="navbar">
+            <div class="nav-content">
+                <a
+                    href="index.html"
+                    style="text-decoration: none; color: inherit"
+                >
+                    <div class="logo">
+                        adam<span class="highlight">.dev</span>
+                    </div>
+                </a>
+
+                <div class="nav-actions">
+                    <a
+                        href="index.html"
+                        class="nav-back-text"
+                        data-lang="backBtn"
+                    >
+                        Wróć
+                    </a>
+
+                    <button
+                        id="translate-btn"
+                        class="icon-btn"
+                        aria-label="Zmień język"
+                    >
+                        <i data-lucide="languages"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <section class="contact-section fade-in">
+                <h1
+                    class="section-title"
+                    style="justify-content: center; margin-bottom: 10px"
+                >
+                    <i data-lucide="mail" class="icon-title"></i>
+                    <span data-lang="contactTitle">Skontaktuj się</span>
+                </h1>
+                <p
+                    class="subtitle"
+                    style="text-align: center; margin: 0 auto 3rem auto"
+                    data-lang="contactSubtitle"
+                >
+                    Masz pytanie lub propozycję współpracy? Napisz mi wiadomość!
+                </p>
+
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <div class="icon-box">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div>
+                                <h3>Email</h3>
+                                <p><a href="mailto:&#115;&#121;&#110;&#101;&#107;&#046;&#103;&#111;&#097;&#116;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" class="contact-link">synek.goat@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="icon-box">
+                                <i data-lucide="message-square"></i>
+                            </div>
+                            <div>
+                                <h3>Discord</h3>
+                                <p>
+                                    @adasieqk
+                                </p>
+                            </div>
+                        </div>  
+                        <div class="info-card">
+                            <div class="icon-box">
+                                <i data-lucide="send"></i>
+                            </div>
+                            <div>
+                                <h3>Telegram</h3>
+                                <p><a href="https://t.me/synek_goat" target="_blank" class="contact-link">@adasieqk</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-decoration">
+                            <p data-lang="contactQuote">
+                                Zawsze chętny do kodowania nowych rzeczy.
+                            </p>
+                        </div>
+                    </div>
+
+                    <form
+                        action="https://api.web3forms.com/submit"
+                        method="POST"
+                        class="contact-form"
+                    >
+                        <input
+                            type="hidden"
+                            name="access_key"
+                            value="e738db3a-d411-4764-b0cc-ca33f92ef3c9"
+                        />
+
+                        <div class="form-group">
+                            <label for="name" data-lang="formName"
+                                >Twoje Imię</label
+                            >
+                            <input type="text" id="name" name="name" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" data-lang="formEmail"
+                                >Twój Email</label
+                            >
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" data-lang="formMsg"
+                                >Wiadomość</label
+                            >
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-full">
+                            <i data-lucide="send"></i>
+                            <span data-lang="sendBtn">Wyślij wiadomość</span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                &copy; 2025 Adam @ synek.ovh
+            </p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
