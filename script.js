@@ -35,6 +35,7 @@ const translations = {
         collabRole: "Web Developer & Współpracownik",
         collabDesc: "Wymieniamy się pomysłami, sprawdzamy sobie nawzajem kod i pracujemy razem nad projektami szkolnymi i pobocznymi.",
         collabBtn: "Zobacz jego GitHub",
+        hisWebsite: "Jego strona",
 
         contactTitle: "Skontaktuj się",
         contactSubtitle: "Masz pytanie lub propozycję współpracy? Napisz do mnie!",
@@ -65,6 +66,7 @@ const translations = {
         collabRole: "Web Developer & Collaborator",
         collabDesc: "We exchange ideas, review each other’s code, and work together on school and side projects.",
         collabBtn: "View his GitHub",
+        hisWebsite: "View his website",
 
         contactTitle: "Get in Touch",
         contactSubtitle: "Have a question or want to work together? Send me a message!",
@@ -77,7 +79,7 @@ const translations = {
         proj1Title: "Company Search Engine",
         proj1Desc: "A website for searching professions entered by the user on panoramafirm.pl.",
         proj2Title: "Portfolio",
-        proj2Desc: "The website you're looking at. Clean layout, dark theme, and animations.",
+        proj2Desc: "The website you're looking at. Clean layout, dark theme and animations.",
         proj3Title: "Courses",
         proj3Desc: "My code from learning various programming languages."
     }
